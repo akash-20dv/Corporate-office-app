@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+/* Base Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html,body {
+    font-family: "poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(144, 209, 47);
+}
+
+h1, h2, p {
+    margin: 1.6 rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* header section */
+
+header {
+    height: 140vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('https://www.avepoint.com/blog/wp-content/uploads/2018/10/iStock-887882750.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    color: rgb(144, 209, 47);
+    margin: 0;
+}
+
+nav {
+    padding: 2% 4%;
+    display: flex;
+    justify-content: space-between;
+    margin: -1rem;
+}
+
+nav box-icon {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1.6rem;
+}
+
+nav ul li a:hover {
+    transition: 0.3 ease-in-out;
+    color: whitesmoke;
+}
+
+.header-content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+    color: whitesmoke;
+}
+
+form {
+    margin: 2.4rem 0;
+}
+
+input {
+    font-size: 1.8rem;
+}
+
+input[type=text], input[type=email] {
+    width: 50%;
+    padding: 7px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+    background-color: whitesmoke;
+}
+
+input[type=submit] {
+    width: 50%;
+    padding: 7px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background: rgba(128, 201, 60, 0.89);
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-size: 1.3rem;
+    color: rgb(151, 146, 146);
+}
+
+/* About section */
+
+.about-left, .about-middle, .about-right {
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 4px;
+    background: rgba(128, 201, 60, 0.89);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.about2 {
+    background: #222;
+    color: whitesmoke;
+}
+
+.about2-left {
+    flex-basis: 45%;
+    margin: 40px 0;
+}
+
+.about2-left h2, .about2-left h1 {
+    color: rgba(128, 201, 60, 0.89);
+}
+
+.about2-right {
+    flex-basis: 30%;
+}
+
+.about2 .card {
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 20px 70px;
+    text-align: center;
+    color: #222;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:768px) {
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+    nav box-icon {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    }
+    nav ul {
+        background: whitesmoke;
+        display: none;
+    }
+    .showmenu {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+    nav ul li a {
+        color: #222;
+    }
+
+    /* header content */
+    .header-content{
+        width: 100%;
+        top: 16%;
+        left: 0;
+        text-align: center;
+        padding: 0 8px;
+    }
+    .header-content h1{
+        font-size:26px;
+    }
+    .header-content p{
+        font-size: 16px;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=submit]{
+        width: 80%;
+        padding: 4px 02px;
+        margin: 6px auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+
+}
